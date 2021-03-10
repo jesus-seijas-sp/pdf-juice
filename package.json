@@ -1,0 +1,56 @@
+{
+  "name": "pdf-juice",
+  "version": "1.0.0",
+  "description": "PDF data extractor",
+  "author": {
+    "email": "jseijas@gmail.com",
+    "name": "Jesus Seijas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuotie/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuotie/core/issues"
+  },
+  "homepage": "https://github.com/kuotie/core#readme",
+  "maintainers": [
+    {
+      "email": "jseijas@gmail.com",
+      "name": "Jesus Seijas"
+    }
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lintfix": "eslint --fix .",
+    "test": "eslint --fix . && jest --silent --coverage --maxWorkers=4 ."
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^2.6.347"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/**/**.js"
+    ],
+    "coverageDirectory": "coverage",
+    "testEnvironment": "node"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
